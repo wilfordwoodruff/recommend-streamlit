@@ -10,22 +10,22 @@ The purpose of this repository is to input a document called, `derived_data.csv`
 
  # Instructions on how to complete this purpose:
 
-1. Ensure that the following files: (all 3 `a_scores`), `b_scores`, `c_scores`, and `derived_data.csv` files are all adjacent to each other.
+1. Ensure that the following files: (all 3 `a_scores_<variable>.py`), `b_scores.py`, `c_scores.py`, and `derived_data.csv` files are all adjacent to each other.
 
 2. Ensure that the data_path variable in all the a files are correct and lead to `derived_data.csv`.
 
 3. Ensure that you have enough processing power to run these files as they are extremely computationally demanding for a small computer.
 
-4. **Run code** on `a_scores_people`, then after that has finished, **run code** on `a_scores_places`, and after that finishes, **run code** on `a_scores_topics`. The `a_scores_<variable>` files all output a file called `closest_<variable>.parquet` that is used in `b_scores`.
+4. **Run code** on `a_scores_people.py`, then after that has finished, **run code** on `a_scores_places.py`, and after that finishes, **run code** on `a_scores_topics.py`. The `a_scores_<variable>.py` files all output a file called `closest_<variable>.parquet` that is used in `b_scores.py`.
 
-5. **Run code** on `b_scores`, and then on `c_scores`
+5. **Run code** on `b_scores.py`, and then on `c_scores.py`
 
 
 ## Under
 
 This section explains the mathematical and algorithmic processes used in the script to generate recommendations based on similarities in people tags from the Wilford Woodruff Papers dataset.
 
-### File: `a_score`: Data Preprocessing
+### File: `a_score.py`: Data Preprocessing
 
 1. **Data Loading**: The script begins by loading the journal entries from 'derived_data.csv', focusing on columns like 'text_only_transcript', 'people', 'places', and 'topics'.
 
@@ -117,7 +117,7 @@ def closest_indices_df(my_df, ids = df["internal_id"]):
 
 8. **Output Generation**: The final output of this file is a matrix or a set of matrices, indicating the closest journal entries for each entry in the dataset. These results are saved in files (e.g., 'closest_people.parquet') for further analysis or direct use in the recommendation system.
 
-### `b_scores` and `c_scores`: Backup Handling
+### `b_scores.py` and `c_scores.py`: Backup Handling
 
 - **Handling Insufficient Data**: In cases where the primary method does not yield sufficient results (duds), the script has a backup mechanism. It reprocesses the entries using raw similarity scores from the text content, ensuring that every entry gets a set of recommendations. (When a journal entry has no people/ places/ topics tags, the script uses the raw text similarity scores to generate recommendations)
 
