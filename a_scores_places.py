@@ -7,6 +7,8 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+data_path = 'derived_data.csv'
+
 print("1: Loading data")
 unwanted_match_words = [
     
@@ -18,7 +20,7 @@ unwanted_match_words = [
 nogo = "|".join(unwanted_match_words)
            
 df = pl\
-    .read_csv('../../derived_data.csv')\
+    .read_csv(data_path)\
     .rename({
         'Internal ID': 'internal_id',
         'Document Type': 'document_type',
