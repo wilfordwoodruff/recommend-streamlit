@@ -1,0 +1,54 @@
+HUME,10CATEGORIES
+Contemplation,Satisfaction
+Calmness,Satisfaction
+Satisfaction,Satisfaction
+Interest,Excitement
+Contentment,Satisfaction
+Enthusiasm,Excitement
+Concentration,Neutral
+Annoyance,Anger
+Nostalgia,Hope
+Realization,Excitement
+Determination,Excitement
+Triumph,Excitement
+Gratitude,Hope
+Excitement,Excitement
+Pride,Joy-Gratitude
+Disappointment,Sad
+Joy,Joy-Gratitude
+Confusion,Neutral
+Admiration,Joy-Gratitude
+Tiredness,Sad
+Contempt,Anger
+Disapproval,Anger
+Boredom,Neutral
+Awe,Hope
+Adoration,Joy-Gratitude
+Sadness,Sad
+Distress,Fear
+Aesthetic Appreciation,Excitement
+Entrancement,Excitement
+Surprise (positive),Excitement
+Relief,Satisfaction
+Love,Joy-Gratitude
+Surprise (negative),Fear
+Amusement,Joy-Gratitude
+Sarcasm,Anger
+Anger,Anger
+Pain,Anger
+Anxiety,Fear
+Doubt,Fear
+Empathic Pain,Sad
+Sympathy,Neutral
+Disgust,Anger
+Awkwardness,Sad
+Fear,Fear
+Ecstasy,Joy-Gratitude
+Shame,Sad
+Horror,Fear
+Craving,Excitement
+Guilt,Sad
+Embarrassment,Fear
+Romance,Joy-Gratitude
+Envy,Sad
+Desire,Joy-Gratitude

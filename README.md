@@ -122,3 +122,8 @@ def closest_indices_df(my_df, ids = df["internal_id"]):
 - **Handling Insufficient Data**: In cases where the primary method does not yield sufficient results (duds), the script has a backup mechanism. It reprocesses the entries using raw similarity scores from the text content, ensuring that every entry gets a set of recommendations. (When a journal entry has no people/ places/ topics tags, the script uses the raw text similarity scores to generate recommendations)
 
 By leveraging these mathematical and algorithmic approaches, the script efficiently processes the Wilford Woodruff Papers, uncovering meaningful connections across journal entries based on people, places, and topics.
+
+
+# Streamlit App folder
+
+This repository contains a folder called `streamlit_app`. This folder contains a file called `working_app.py` which is a python script to run a streamlit app that is an exploratory data analysis tool. To run this tool, right click the file, `working_app.py`, and press "Copy as Path". In the Command Prompt, type `streamlit run "<working_app.py path>"` where `<working_app.py path>` is the path to working_app.py in quotes. This will open the application.
